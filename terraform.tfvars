@@ -3,4 +3,4 @@
 # Make sure it is at least 5 characters long.
 
 # prefix = "yourname"
-# environment = "production"
+environment = "production"
