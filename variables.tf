@@ -11,7 +11,7 @@ variable "prefix" {
 
 variable "environment" {
   description = "What environment you will be deploying to."
-  default = "development"
+  default = "production"
 }
 
 variable "region" {
