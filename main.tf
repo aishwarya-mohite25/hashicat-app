@@ -1,6 +1,13 @@
 provider "aws" {
-  version = "~> 3.0"
   region  = var.region
+  default_tags {
+   tags = {
+     environment = "Test"
+     application = "TFProviders"
+     owner       = "Test"
+     costcenter  = "12345"
+   }
+ }
 }
 
 resource "aws_vpc" "hashicat" {
