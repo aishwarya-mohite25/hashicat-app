@@ -2,9 +2,9 @@ provider "aws" {
   region  = var.region
   default_tags {
    tags = {
-     environment = "Test"
-     application = "TFProviders"
-     owner       = "Test"
+     environment = var.environment
+     application = "HashiCat"
+     owner       = "Troy"
      costcenter  = "12345"
    }
  }
