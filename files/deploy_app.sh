@@ -11,7 +11,7 @@ cat << EOM > /var/www/html/index.html
   <!-- BEGIN -->
   <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Meow World! <ins><p style="color:red;">${ENVIRONMENT} Environment</p></ins></h2></center>
-  <center>Welcome to ${PREFIX}'s app. My Updates...<!-- Add your custom message to the left --></center>
+  <center>Welcome to ${PREFIX}'s app. <!-- Add your custom message to the left --></center>
   <!-- END -->
 
   </div>
