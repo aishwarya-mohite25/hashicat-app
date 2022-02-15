@@ -1,7 +1,5 @@
 provider "aws" {
   region  = var.region
-  access_key = "AKIAIOSFODNN7EKLJ09T"
-  secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYcvDt8lKjie"
   default_tags {
    tags = {
      environment = var.environment
