@@ -15,8 +15,7 @@ resource "aws_vpc" "hashicat" {
   enable_dns_hostnames = true
 
   tags = {
-    name = "${var.prefix}-vpc-${var.region}"
-    environment = var.environment
+    Name = "${var.prefix}-vpc-${var.region}"
   }
 }
 
@@ -25,12 +24,12 @@ resource "aws_subnet" "hashicat" {
   cidr_block = var.subnet_prefix
 
   tags = {
-    name = "${var.prefix}-subnet"
+    Name = "${var.prefix}-subnet"
   }
 }
 
 resource "aws_security_group" "hashicat" {
-  name = "${var.prefix}-security-group"
+  Name = "${var.prefix}-security-group"
 
   vpc_id = aws_vpc.hashicat.id
 
