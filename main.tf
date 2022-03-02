@@ -5,7 +5,7 @@ provider "aws" {
      environment = var.environment
      application = "HashiCat"
      owner       = "Troy"
-     #costcenter  = "1234"
+     costcenter  = "1234"
    }
  }
 }
@@ -138,6 +138,10 @@ resource "aws_instance" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
+    environment = var.environment
+    application = "HashiCat"
+    owner       = "Troy"
+    costcenter  = "1234"
   }
 }
 
