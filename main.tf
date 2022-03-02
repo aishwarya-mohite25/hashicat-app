@@ -1,13 +1,5 @@
 provider "aws" {
   region  = var.region
-  default_tags {
-   tags = {
-     environment = var.environment
-     application = "HashiCat"
-     owner       = "Troy"
-     costcenter  = "1234"
-   }
- }
 }
 
 resource "aws_vpc" "hashicat" {
