@@ -5,7 +5,7 @@ provider "aws" {
      environment = var.environment
      application = "HashiCat"
      owner       = "Troy"
-     costcenter  = "1234"
+     #costcenter  = "1234"
    }
  }
 }
