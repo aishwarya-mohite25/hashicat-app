@@ -132,8 +132,8 @@ resource "aws_instance" "hashicat" {
     Name = "${var.prefix}-hashicat-instance"
     environment = var.environment
     application = "HashiCat"
-    owner       = "Troy"
-    costcenter  = "1234"
+    #owner       = "Troy"
+    #costcenter  = "1234"
   }
 }
 
