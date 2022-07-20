@@ -133,7 +133,7 @@ resource "aws_instance" "hashicat" {
     environment = var.environment
     application = "HashiCat"
     owner       = "Troy"
-    costcenter  = "9876"
+    costcenter  = "1234"
   }
 }
 
