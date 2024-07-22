@@ -3,4 +3,4 @@
 # Make sure it is at least 5 characters long.
 
 prefix = "Hashicat"
-environment = "demo"
+environment = "Hashicat"
